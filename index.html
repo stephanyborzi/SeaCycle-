@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sea Cycle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="images/favicon.ico" image="icon/x-icon">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <img src="images/logo.png" class="logoMobile" />
+        </div>
+        <ul class="container">
+            <li><a href="index.html">home</a></li>
+            <li><a href="#Solution">Solution</a></li>
+            <li><a href="#Tecnology">Tecnology</a></li>
+            <li class="logoli"><a href="index.html"><img src="images/logo.png" class="logo"></a></li>
+            <li><a href="#Target">Target</a></li>
+            <li><a href="#Benefits">Benefits</a></li>
+            <li><a href="#DayToDay">Day to day</a></li>
+        </ul>
+    </header>
+
+    <section class="intro">
+        <div class="container row justify-between">
+            <div class="title">
+                <h1>NEVER STOP<br>TO RECYCLE</h1>
+                <p>Recicle seu lixo na praia e ganhe cupons <br> das suas marcas favoritas. Cada garrafa<br> reciclada é
+                    uma onda a menos de poluição.</p>
+                <button onclick="location.href = 'login.html'">Login</button>
+            </div>
+            <div class="lista">
+                <div class="item">
+                    <img src="images/coletar.png">
+                    <h3>Coletar</h3>
+                </div>
+                <div class="item">
+                    <img src="images/descartar.png">
+                    <h3>Descartar</h3>
+                </div>
+                <div class="item">
+                    <img src="images/reciclar.png">
+                    <h3>Reciclar</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="topicos">
+        <div class="container gap-80">
+            <div class="bloco">
+                <h1>Problema</h1>
+                <ul>
+                    <li>
+                        <p>4,8 a 12,7 milhões de toneladas de plástico entram nos oceanos a cada ano</p>
+                    </li>
+                    <li>
+                        <p>Cerca de 80% desses resíduos são plásticos</p>
+                    </li>
+                    <li>
+                        <p>Microplásticos foram encontrados em todos os níveis da cadeia alimentar marinha, incluindo
+                            peixes que são consumidos por humanos</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="Tecnology">
+        <div class="container-fluid" style="height: 500px;">
+            <div class="progressTime-container">
+                <div class="progressTime-bar"></div>
+            </div>
+            <h1 class="TecnologyTitle">Tecnologias</h1>
+            <div class="container-fluid row" style="height: 500px;justify-content: flex-end;align-items: flex-end;">
+                <div id="TecnologyData">
+                    <h1 id="animatedText">  </h1>
+                    <p class="animated">  </p>
+                </div>
+                <div class="navigation">
+                    <div class="containerItens">
+                        <div class="itens"></div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar"></div>
+                        </div>
+                        <p id="currentPage">0</p>
+                    </div>
+                    <div class="buttons">
+                        <button onclick="prevSlide()">
+                            <
+                        </button>
+                                <button onclick="nextSlide()">></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cover" style="height: 500px;"></div>
+    </section>
+
+    <section class="topicos" id="Solution">
+        <div class="container gap-80">
+            <div class="bloco">
+                <h1>OBJETIVO</h1>
+                <ul>
+                    <li>
+                        <p>Facilitar o descarte correto desses resíduos em áreas de reciclagem especializada</p>
+                    </li>
+                    <li>
+                        <p>Vincular o projeto com grandes empresas que prezam pela economia verde</p>
+                    </li>
+                    <li>
+                        <p>Diminuir o número de lixo que é jogado nos ambientes marítimos , dando um foco, inicialmente,
+                            nas praias e pontos turísticos marítimos</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="aplicativo">
+        <div class="container-fluid ">
+            <div class="item" id="Target">
+                <div class="container row">
+                    <img src="images/teste.png" />
+                    <div>
+                        <h2>Conectando pessoas</h2>
+                        <p>
+                            Pessoas que estão se divertindo na praia e descartando corretamente o lixo gerado no seu dia
+                            de divertimento e ganhando pontos virtuais que podem ser trocados por cupons de empresas
+                            filiadas.
+                            <br />
+                            <br />
+                            Um dono de um estabelecimento privado no qual, a cada quantidade de lixo que ele descarte
+                            corretamente e mande para centros de reciclagem, parte do lucro é repartido com ele
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" id="Benefits">
+                <div class="container row">
+                    <img src="images/lixo.png" />
+                    <div>
+                        <h2>Segurança pra você</h2>
+                        <p>
+                            A solução tem como seu principal objetivo proporcionar a conecção rápida e fácil entre
+                            pessoas. Ao estimular o ato do descarte correto através de recompensas financeiras nós:
+                        </p>
+                        <ul>
+                            <li>Introduziremos o hábito da reciclagem aos brasileiros</li>
+                            <li>Beneficiaremos as empresas parceiras com o aumento das vendas dos seu produtos</li>
+                            <li>Todo lixo descartado será levado para centros de reciclagem </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="diadia" id="DayToDay">
+        <div class="container">
+            <h1>Dia a Dia</h1>
+            <p>
+                A solução ajudará as pessoas no dia a dia a terem uma motivação para fazer o descarte correto de
+                resíduos.
+                <br /><br />
+                Infelizmente, sabemos que só a própria consciência ambiental da população em geral não é o suficiente
+                para que todo esse processo aconteça em grande escala e que a reciclagem, principalmente no Brasil, não
+                é um hábito de seu povo .
+                <br /><br />
+                Portanto, acreditamos que ao oferecer uma recompensa financeira, estimularemos que cada vez mais pessoas
+                reciclem seus próprios resíduos, o que consequentemente não apenas a ajudará em suas finanças pessoais,
+                como também cultivará o hábito da reciclagem no geral.
+            </p>
+        </div>
+    </section>
+
+    <section class="telas">
+        <div class="container width-100">
+            <h1>Aplicativo</h1>
+        </div>
+        <div class="container row flex-wrap listTelas">
+            <div class="tela">
+                <img src="images/tela1.png" />
+            </div>            
+            <div class="tela">
+                <img src="images/tela2.png" />
+            </div>            
+            <div class="tela">
+                <img src="images/tela3.png" />
+            </div>            
+            <div class="tela">
+                <img src="images/tela4.png" />
+            </div>            
+            <div class="tela">
+                <img src="images/tela5.png" />
+            </div>            
+            <div class="tela">
+                <img src="images/tela6.png" />
+            </div>            
+        </div>
+    </section>
+
+    <footer>
+        <div class="container row justify-between">
+            <div class="logoFooter">
+                <img src="images/logo.png">
+            </div>
+            <div class="footerNomes">
+                <p>Nomes</p>
+                <ul>
+                    <li>Stephany Borzi Marques</li>
+                    <li>Albert Katri</li>
+                    <li>Gabriel Ferreira Flora Carvalheiro</li>
+                </ul>
+            </div>
+            <div class="footerNomes">
+                <p>RM</p>
+                <ul>
+                    <li>557351</li>
+                    <li>556544</li>
+                    <li>556476</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container row">
+            <p class="textoFooter">
+                Trabalho realizado em parceria da Fiap - Blue Future
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
